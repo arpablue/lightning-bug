@@ -1,0 +1,11 @@
+2021-14-07 10:55:12: -------------------test_TreePath_toJSONnicelly-------------------
+2021-14-07 10:55:12: {"name":"Jason","lastname":"Todd","age":"23","sex":"m"}
+2021-14-07 10:55:12: 
+2021-14-07 10:55:12:    CUR: [{"name":"Jason","lastname":"Todd","age":"23","sex":"m"}]
+2021-14-07 10:55:12:    EXP: [{
+    "name":"Jason",
+    "lastname":"Todd",
+    "age":"23",
+    "sex":"m"
+}]
+2021-14-07 10:55:12: FAIL: The expected and the current result are different.

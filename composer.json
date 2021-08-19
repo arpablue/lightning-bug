@@ -1,0 +1,23 @@
+{
+    "name": "arpablue/lightningbug",
+    "description": "this is Test Management tools and Bug tracking.",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "9.5.x-dev",
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArpaBlue\\": "src/arpablue/",
+            "Ablb\\": "src/ablb/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Augusto Flores",
+            "email": "eng.augusto.flores@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

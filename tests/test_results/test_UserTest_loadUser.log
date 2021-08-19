@@ -1,0 +1,8 @@
+2021-14-07 11:09:39: -------------------test_UserTest_loadUser-------------------
+2021-14-07 11:09:39: Execute GET to http://www.lightningbug.com/api/user/2
+2021-14-07 11:09:39: Data loaded:
+2021-14-07 11:09:39: {"type":"success","msg":"Data has been loaded successfully.","data":{"id":"2","name":"Jhonny","lastname":"Test","email":"jhonny.test@test.com","username":"test","pwd":"","photo":"","active":"1","removed":"1","createdAt":"2021-07-06 11:05:04","token":""}}
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [{"type":"success","msg":"Data has been loaded successfully.","data":{"id":"2","name":"Jhonny","lastname":"Test","email":"jhonny.test@test.com","username":"test","pwd":"","photo":"","active":"1","removed":"1","createdAt":"2021-07-06 11:05:04","token":""}}]
+2021-14-07 11:09:39:    EXP: [{"type":"success","msg":"Data has been loaded successfully.","data":{"id":"2","name":"Jhonny","lastname":"Test","email":"jhonny.test@test.com","username":"test","pwd":"","photo":"","active":"1","removed":"1","createdAt":"2021-07-06 11:05:04","token":""}}]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.

@@ -1,0 +1,51 @@
+<?php
+
+namespace Ablb\Base;
+
+/**
+ * It is a class for test.
+ */
+class Base[-Name-] extends AttrManager
+{
+    ////////////////////////////////////////////constructors destructor /////////////////////////////////////
+    /**
+     * MapRouter destructor.
+     */
+    public function __destruct()
+    {
+    }
+    /**
+     * MapRouter constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        $this->initAttrs();
+    }
+    ///////////////////////////////////////////////////////////////////
+    protected function initAttrs()
+    {
+        $this->mTable = '[-name-]';
+
+        [-loop-]
+        $this->setAttribute('[-attr-]',null);
+        [-/loop-]
+    }
+    [-loop-]
+    /**
+     * It specify the [-attr-] value.
+     */
+    public function get[-Attr-]()
+    {
+        return $this->getAttribute('[-attr-]');
+
+    }
+    /**
+     * It return the [-attr-] value.
+     */
+    public function set[-Attr-]( $value )
+    {
+        $this->setAttribute('[-attr-]', $value);
+    }
+    [-/loop-]
+}

@@ -1,0 +1,74 @@
+2021-14-07 11:09:39: -------------------test_MapRoute_method_redirection-------------------
+2021-14-07 11:09:39: {
+    "class": "MapRouter",
+    "com": "ARPAblue",
+    "uri": "",
+    "method": "GET",
+    "default": null,
+    "parameters":{
+        "GET":{},
+        "JSON":{}
+    },
+    "references":{
+        "*":{},
+        "GET":{
+            "api/users/*":"api/user/list.php",
+            "api/user/*":"api/user/info.php"
+        },
+        "POST":{
+            "api/user/*":"api/user/add.php"
+        },
+        "PUT":{
+            "api/user/*":"api/user/update.php"
+        },
+        "DELETE":{
+            "api/user/*":"api/user/remove.php"
+        }
+    }
+}
+2021-14-07 11:09:39: The end point is [api/user/1]
+2021-14-07 11:09:39: The HTTP method is [GET]
+2021-14-07 11:09:39: ...Searching in general methods
+2021-14-07 11:09:39: WARNING: The [api/user/1] is not presents for general methods.
+2021-14-07 11:09:39: ...Searching in the GET method
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [api/user/info.php]
+2021-14-07 11:09:39:    EXP: [api/user/info.php]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
+2021-14-07 11:09:39: The end point is [api/users]
+2021-14-07 11:09:39: The HTTP method is [GET]
+2021-14-07 11:09:39: ...Searching in general methods
+2021-14-07 11:09:39: WARNING: The [api/users] is not presents for general methods.
+2021-14-07 11:09:39: ...Searching in the GET method
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [api/user/list.php]
+2021-14-07 11:09:39:    EXP: [api/user/list.php]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
+2021-14-07 11:09:39: The end point is [api/user]
+2021-14-07 11:09:39: The HTTP method is [POST]
+2021-14-07 11:09:39: ...Searching in general methods
+2021-14-07 11:09:39: WARNING: The [api/user] is not presents for general methods.
+2021-14-07 11:09:39: ...Searching in the POST method
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [api/user/add.php]
+2021-14-07 11:09:39:    EXP: [api/user/add.php]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
+2021-14-07 11:09:39: The end point is [api/user/32]
+2021-14-07 11:09:39: The HTTP method is [PUT]
+2021-14-07 11:09:39: ...Searching in general methods
+2021-14-07 11:09:39: WARNING: The [api/user/32] is not presents for general methods.
+2021-14-07 11:09:39: ...Searching in the PUT method
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [api/user/update.php]
+2021-14-07 11:09:39:    EXP: [api/user/update.php]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
+2021-14-07 11:09:39: The end point is [api/user/554]
+2021-14-07 11:09:39: The HTTP method is [DELETE]
+2021-14-07 11:09:39: ...Searching in general methods
+2021-14-07 11:09:39: WARNING: The [api/user/554] is not presents for general methods.
+2021-14-07 11:09:39: ...Searching in the DELETE method
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [api/user/remove.php]
+2021-14-07 11:09:39:    EXP: [api/user/remove.php]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
+2021-14-07 11:09:39: PASS: All expected file references are correct.

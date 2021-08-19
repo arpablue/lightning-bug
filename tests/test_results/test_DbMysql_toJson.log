@@ -1,0 +1,5 @@
+2021-14-07 11:09:39: -------------------test_DbMysql_toJson-------------------
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [{"host":"localhost","database":"test","port":3306,"user":"noroot","password":"noroot"}]
+2021-14-07 11:09:39:    EXP: [{"host":"localhost","database":"test","port":3306,"user":"noroot","password":"noroot"}]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.

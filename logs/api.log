@@ -1,0 +1,41 @@
+2021-18-08 04:56:10: INFO: MySqLCon - Open the connection to the database.
+2021-18-08 04:56:10: MySqLCon - The connection to the database is success.
+2021-18-08 04:56:10: Database connection stablish.
+2021-18-08 04:56:10: The [admin] session not exists.
+2021-18-08 04:56:10: MAP used for the API:
+2021-18-08 04:56:10: {
+    "class": "MapRouter",
+    "com": "ARPAblue",
+    "uri": "",
+    "method": "PUT",
+    "default": "api/error/default.html",
+    "parameters":{
+        "GET":{},
+        "JSON":{
+            "username": "admin",
+            "password": "admin"
+        }
+    },
+    "references":{
+        "*":{},
+        "GET":{
+            "api/user/*":"api/user/info.php",
+            "api/users":"api/user/list.php"
+        },
+        "PUT":{
+            "api/login":"api/login/index.php",
+            "api/logout":"api/logout/index.php",
+            "api/user/add":"api/user/add.php",
+            "api/user/modif/*":"api/user/update.php",
+            "api/user/del/*":"api/user/remove.php"
+        }
+    }
+}
+2021-18-08 04:56:10: Start the DB connection.
+2021-18-08 04:56:10: ...The global connection has been stablish.
+2021-18-08 04:56:10: MySqlCon - Executing the SQL [SELECT * FROM user WHERE (username='admin')AND(pwd='admin')]
+2021-18-08 04:56:10: Number of users found: 1
+2021-18-08 04:56:10: SUCCESS: Login success.
+2021-18-08 04:56:10: The [admin] session not exists.
+2021-18-08 04:56:10: The [admin] session not exists.
+2021-18-08 04:56:10: ...Start session

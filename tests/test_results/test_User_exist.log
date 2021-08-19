@@ -1,0 +1,15 @@
+2021-14-07 11:09:39: -------------------test_User_exist-------------------
+2021-14-07 11:09:39: SUCCESS: the user has been found.
+2021-14-07 11:09:39: {
+    "id":"2",
+    "name":null,
+    "lastname":null,
+    "email":null,
+    "username":null,
+    "pwd":null,
+    "photo":null,
+    "active":null,
+    "removed":null,
+    "createdAt":null,
+    "token":null
+}

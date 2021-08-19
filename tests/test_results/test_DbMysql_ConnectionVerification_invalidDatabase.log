@@ -1,0 +1,17 @@
+2021-14-06 08:58:35: -------------------test_DbMysql_ConnectionVerification_invalidDatabase-------------------
+2021-14-06 08:58:35: {
+    "host":"localhost",
+    "database":"test",
+    "port":3306,
+    "user":"noroot",
+    "password":"noroot"
+}
+2021-14-06 08:58:35: changin the host to testx
+2021-14-06 08:58:35: {
+    "host":"testx",
+    "database":"test",
+    "port":3306,
+    "user":"noroot",
+    "password":"noroot"
+}
+2021-14-06 08:58:35: INFO: MySqLCon - Open the connection to the database.

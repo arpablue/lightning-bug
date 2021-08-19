@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+</head>
+<script src="thirdparty/axios/axios.min.js" language="JavaScript"></script>
+
+<script src="thirdparty/jquery/jquery.js" language="JavaScript"></script>
+<script type="application/javascript" language="JavaScript">
+
+    function getMethod(){
+        return $('input[type="radio"]:checked').val();
+    }
+    function print( text ){
+        target = document.getElementById("res");
+        target.innerHTML = text ;
+        //console.log( text + "" );
+    }
+    $('input[type="radio"]').click(function (){
+        metod = $('input[type="radio"]:checked').val();
+        //console.log("---> "+metod.data);
+        $("#form1").attr("method", metod);
+    });
+
+    function sendAction(){
+        /*let data = new FormData();
+        data.append('nombre', document.getElementById("nombre").value);
+        data.append('lname',  document.getElementById("lname").value);
+        data.append('city',  document.getElementById("city").value);
+        */
+
+
+
+
+        let data = {
+            nombre: document.getElementById("nombre").value,
+            lname:  document.getElementById("lname").value,
+            city:  document.getElementById("city").value,
+        }
+        
+
+        axios({
+            method: getMethod()
+            ,url:'http://www.lightningbug.com/'
+            ,data: data
+            //,contentType: ''
+        }).then( res => {
+            print( JSON.stringify( res.data) );
+
+        }).catch( err=>{
+            print( JSON.stringify( err ) );
+        });
+    }
+</script>
+<body>
+    <div>
+
+        <H1>Test Page</H1>
+        <p>It is the test page to evual the funcionality</p>
+    </div>
+    <div>
+        <input type="radio" id="get" name="metod" value="GET" checked> GET</br>
+        <input type="radio" id="put" name="metod" value="PUT"> PUT</br>
+        <input type="radio" id="post" name="metod" value="POST"> POST</br>
+        <input type="radio" id="patch" name="metod" value="PATCH"> PATCH</br>
+        <input type="radio" id="delete" name="metod" value="DELETE"> DELETE</br>
+    </div>
+    <!--div>
+        <strong>Data:</strong></div></br>
+        <textarea id="data" name="data" style="width: 400px; height: 100px">
+{
+    "prj"="arpa",
+    "desc"="This is for test",
+    "team"="blue"
+}
+         </textarea>
+    </div-->
+    <div style="border: 1px solid blue">
+        <div>
+            <H2><strong>Ajax Form</strong>: </H2>
+        </div>
+        <div>
+            <div>Name: <input id="nombre" name="nombre" type="text" value="Augusto"></div>
+            <div>Lastname: <input id="lname" name="lname" type="text" value="Flores"></div>
+            <div>City:
+                <select id="city" name="city" >
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="La Paz" selected>La Paz</option>
+                    <option value="Cochabamba">Santa Cruz</option>
+                    <option value="Cochabamba">Tarija</option>
+                </select>
+
+            </div>
+            <div>
+                File: <input type="file" id="upper" name="upper" />
+            </div>
+            <div>
+                <input type="submit" onclick="sendAction()">
+            </div>
+            <div>
+                <div>
+                    <b>Response</b>
+                </div>
+                <div style="border: 1px solid black;">
+                    <pre id="res" name="res"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border: 1px solid blue">
+        <div>
+            <H2><strong>Ajax Form</strong>: </H2>
+        </div>
+        <form
+                method="POST"
+                action="http://www.lightningbug.com/"
+                target="_blank"
+                enctype="multipart/form-data"
+
+        >
+            <div>Name: <input id="nombre2" name="nombre" type="text" value="Augusto"></div>
+            <div>Lastname: <input id="lname2" name="lname" type="text" value="Flores"></div>
+            <div>City:
+                <select id="city2" name="city" >
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="La Paz" selected>La Paz</option>
+                    <option value="Cochabamba">Santa Cruz</option>
+                    <option value="Cochabamba">Tarija</option>
+                </select>
+
+            </div>
+            <div>
+                File: <input type="file" id="upper2" name="upper" />
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

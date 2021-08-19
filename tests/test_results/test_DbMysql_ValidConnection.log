@@ -1,0 +1,10 @@
+2021-14-07 11:09:39: -------------------test_DbMysql_ValidConnection-------------------
+2021-14-07 11:09:39: {
+    "host":"localhost",
+    "database":"test",
+    "port":3306,
+    "user":"noroot",
+    "password":"noroot"
+}
+2021-14-07 11:09:39: INFO: MySqLCon - Open the connection to the database.
+2021-14-07 11:09:39: MySqLCon - The connection to the database is success.

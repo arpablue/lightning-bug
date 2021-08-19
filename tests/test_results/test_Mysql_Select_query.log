@@ -1,0 +1,29 @@
+2021-14-07 11:09:39: -------------------test_Mysql_Select_query-------------------
+2021-14-07 11:09:39: {
+    "host":"localhost",
+    "database":"test",
+    "port":3306,
+    "user":"noroot",
+    "password":"noroot"
+}
+2021-14-07 11:09:39: INFO: MySqLCon - Open the connection to the database.
+2021-14-07 11:09:39: MySqLCon - The connection to the database is success.
+2021-14-07 11:09:39: MySqlCon - Executing the SQL [select * from users]
+2021-14-07 11:09:39: {
+    {
+        "id":"1",
+        "sName":"Augusto",
+        "sLastname":"Flores",
+        "sEmail":"augustoflores@test.com",
+        "sPwd":"control",
+        "sPhoto":"mifoto.png"
+    },
+    {
+        "id":"2",
+        "sName":"Leo",
+        "sLastname":"Berek",
+        "sEmail":"Leo.Berek@test.com",
+        "sPwd":"control",
+        "sPhoto":"miFoto.png"
+    }
+}

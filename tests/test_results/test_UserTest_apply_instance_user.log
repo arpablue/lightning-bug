@@ -1,0 +1,14 @@
+2021-14-07 11:09:39: -------------------test_UserTest_apply_instance_user-------------------
+2021-14-07 11:09:39: {
+    "id":null,
+    "name":"Jhonny",
+    "lastname":"Prove",
+    "email":"jhonny.prove@test.com",
+    "username":"jhonny_01",
+    "pwd":null,
+    "photo":null,
+    "active":1,
+    "removed":1,
+    "createdAt":"2021-07-14 11:09:39",
+    "token":null
+}

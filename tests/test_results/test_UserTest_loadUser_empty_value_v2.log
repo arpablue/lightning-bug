@@ -1,0 +1,8 @@
+2021-14-07 11:09:39: -------------------test_UserTest_loadUser_empty_value_v2-------------------
+2021-14-07 11:09:39: Execute GET to http://www.lightningbug.com/api/user
+2021-14-07 11:09:39: Data loaded:
+2021-14-07 11:09:39: {"type":"fail","msg":"The ID specified do not have a numeric value api\/user"}
+2021-14-07 11:09:39: 
+2021-14-07 11:09:39:    CUR: [{"type":"fail","msg":"The ID specified do not have a numeric value api\/user"}]
+2021-14-07 11:09:39:    EXP: [{"type":"fail","msg":"The ID specified do not have a numeric value api\/user"}]
+2021-14-07 11:09:39: PASS: The expected and the current result are equals.
